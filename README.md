@@ -1,2 +1,2 @@
-# GRUPO-17---150-UTN
-Repositorio del Grupo 17 - Cohorte 150 UTN ARGENTINA PROGRAMA
+# GRUPO 17 COMISIÓN 150 UTN.
+Terminada la primera entrega, solo importen el repositorio en eclipse desde Import (Importar) selecionen en General,  Projects from Folder or Archive (Projecto desde Carpeta o Archivo) click en next (Siguiente) y seleccionen la carpeta del repositorio con el boton Directory (directorio) que se encuentra al final del campo import source. Con eso deberian tener los archivos en eclipse y poder correr el que tiene de nombre "Aplicacion.java" dentro del paquete Lector. Tiene todo lo que pide la entrega 1 y tambien hace print de cada objeto (equipos, partidos, etc) y sus valores cuando los va generando, los mismo con el puntaje final pero tengan en cuenta que si cambian en el archivo de pronostico el lugar de las "x" el programa devuelve una excepcion asi que esta version solo funciona con el pronostico dado sin modificar.
