@@ -5,5 +5,5 @@
  * @author miles
  *
  */
-module tpJava {
+module Lector {
 }
