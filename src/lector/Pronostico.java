@@ -11,9 +11,9 @@ public class Pronostico
 	
 	public Partido partidoReal;
 	//public Equipo equipoGanador;  //Tal ves..
-	public ResultadoEnum resultadoReal;
+	public EstadoDeLosPartidos resultadoReal;
 	
-	public Pronostico(int nIdEquipo1P, int nIdEquipo2P, String nGana1P, String nGana2P, String nEmpataP, Partido nuevoPartido, ResultadoEnum nResultadoReal)
+	public Pronostico(int nIdEquipo1P, int nIdEquipo2P, String nGana1P, String nGana2P, String nEmpataP, Partido nuevoPartido, EstadoDeLosPartidos nResultadoReal)
 	{
 		equipo1IdP = nIdEquipo1P;
 		equipo2IdP = nIdEquipo2P;
@@ -116,11 +116,11 @@ public class Pronostico
 		this.partidoReal = partidoReal;
 	}
 
-	public ResultadoEnum getResultadoReal() {
+	public EstadoDeLosPartidos getResultadoReal() {
 		return resultadoReal;
 	}
 
-	public void setResultadoReal(ResultadoEnum resultadoReal) {
+	public void setResultadoReal(EstadoDeLosPartidos resultadoReal) {
 		this.resultadoReal = resultadoReal;
 	}
 

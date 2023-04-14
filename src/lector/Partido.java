@@ -1,5 +1,7 @@
 package lector;
 
+
+
 public class Partido 
 {	//Atributos de la clase.
 	public Equipo equipo1;
@@ -7,6 +9,8 @@ public class Partido
 	public int partidoId;
 	public int golesEquipo1;
 	public int golesEquipo2;
+	public Resultados estadoEquipo1;
+	public Resultados estadoEquipo2;
 	//Constructor de la clase.
 	public Partido(Equipo nuevoEquipo1, Equipo nuevoEquipo2, int nGolesEquipo1, int nGolesEquipo2) 
 	{
@@ -22,6 +26,9 @@ public class Partido
 		System.out.println("	Equipo 2: " + equipo2.getNombre());
 		System.out.println("	Goles Equipo 1: " + getGolesEquipo1());
 		System.out.println("	Goles Equipo 2: " + getGolesEquipo2());
+		
+		System.out.println(equipo1.getNombre()+' '+ estadoEquipo1());
+		System.out.println(equipo2.getNombre()+' '+ estadoEquipo2());
 		System.out.println(" ");
 
 		
@@ -77,4 +84,34 @@ public class Partido
 	{
 		this.partidoId = partidoId;
 	}
+	
+public Resultados estadoEquipo1() {
+		
+		if(getGolesEquipo1()>getGolesEquipo2()) {
+			estadoEquipo1 = Resultados.GANADOR;
+			}
+		if(getGolesEquipo1()<getGolesEquipo2()) {
+		    estadoEquipo1 = Resultados.PERDEDOR;
+			}
+		if(getGolesEquipo1()==getGolesEquipo2()) {
+			 estadoEquipo1 = Resultados.EMPATE;	
+		    }
+		return estadoEquipo1;
+		
+		}
+
+	public Resultados estadoEquipo2() {
+		
+		if(getGolesEquipo1()>getGolesEquipo2()) {
+			estadoEquipo2 = Resultados.PERDEDOR;
+			}
+		if(getGolesEquipo1()<getGolesEquipo2()) {
+		    estadoEquipo2 = Resultados.GANADOR;
+			}
+		if(getGolesEquipo1()==getGolesEquipo2()) {
+			 estadoEquipo2 = Resultados.EMPATE;
+			}
+		return estadoEquipo2;
+		
+		}
 }

@@ -50,9 +50,9 @@ public class Aplicacion
 		//Creamos el segundo Partido.
 		Partido partido2 = new Partido(equipo3, equipo4, Integer.parseInt(datosExtraidosA1L2.get(3)), Integer.parseInt(datosExtraidosA1L2.get(4)));
 		//Creamos el resultado del Partido 1.
-		ResultadoEnum resultadoPartido1 = new ResultadoEnum(partido1);
+		EstadoDeLosPartidos resultadoPartido1 = new EstadoDeLosPartidos(partido1);
 		//Creamos el resultado del Partido 2.
-		ResultadoEnum resultadoPartido2 = new ResultadoEnum(partido2);
+		EstadoDeLosPartidos resultadoPartido2 = new EstadoDeLosPartidos(partido2);
 		//Creamos el Pronostico del Partido 1 de "Maria".
 		Pronostico pronosticoPartido1 = new Pronostico(Integer.parseInt(datosExtraidosA2L1.get(0)), Integer.parseInt(datosExtraidosA2L1.get(4)), datosExtraidosA2L1.get(1), datosExtraidosA2L1.get(3), datosExtraidosA2L1.get(2), partido1, resultadoPartido1);
 		//Creamos el Pronostico del Partido 2 de "Maria".

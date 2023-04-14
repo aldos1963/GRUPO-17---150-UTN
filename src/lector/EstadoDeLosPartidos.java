@@ -1,13 +1,13 @@
 package lector;
 
-public class ResultadoEnum 
+public class EstadoDeLosPartidos 
 {	//Atributos.
 	public Partido partido;
 	public Equipo ganador;
 	public Equipo perdedor;
 	public boolean empate;
 	//Constructor.
-	public ResultadoEnum (Partido nuevoPartido)
+	public EstadoDeLosPartidos (Partido nuevoPartido)
 	{
 		partido = nuevoPartido;
 		
